@@ -6,6 +6,16 @@
   <title>Veritas Forge — AI Research Division</title>
   <meta name="description" content="Veritas Forge — AI Research Division. Persona AI, memory structures, QSP research and development." />
   <style>
+    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+.brand img {
+  height: 44px;   /* 好みで 36〜56 くらいに調整OK */
+  width: auto;
+  display: block;
+}
+@media (max-width: 720px){
+  .brand img { height: 34px; }
+}
+
     :root{
       --bg:#0b0e14; --fg:#e8eefc; --muted:#aab3c5;
       --card:#121827; --line:#232c42; --accent:#1b2a52;
@@ -79,7 +89,11 @@
 <body>
   <div class="wrap" id="top">
     <header>
-      <div class="logo">Veritas Forge</div>
+
+      <a class="brand" href="#top" aria-label="Veritas Forge">
+  <img src="./logo.png" alt="Veritas Forge logo" />
+</a>
+
       <nav>
         <a href="#about">About</a>
         <a href="#work">Research</a>
